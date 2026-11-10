@@ -1,17 +1,25 @@
 import './App.css'
 import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import { SoomeSeiklus } from './soome-seiklus/soome-seiklus.tsx'
-import { EscapeRoom } from './escape-room/escape-room.tsx'
+import { SoomeSeiklus } from './soome-seiklus/soome-seiklus.tsx';
+import { EscapeRoom } from './escape-room/escape-room.tsx';
+import picfinescape from './assets/pictures/finescape.png';
+import picsoomeseiklus from './assets/pictures/soomeseiklus.png';
 
 
 function MainMenu() {
   return (
     <div className="main-menu">
-      <h1>Main Menu</h1>
-      <ul>
-        <li><Link to="/escape">Escape Room</Link></li>
-        <li><Link to="/seiklus">Soome Seiklus</Link></li>
-      </ul>
+      <h1>Choose your adventure!</h1>
+      <div className="menu-buttons">
+        <div className="menu-button-container">
+          <img className="menu-button-image" src={picfinescape} alt="Escape Room" />
+          <Link to="/escape" className="menu-button">Escape Room</Link>
+        </div>
+        <div className="menu-button-container">
+          <img className="menu-button-image" src={picsoomeseiklus} alt="Soome Seiklus" />
+          <Link to="/seiklus" className="menu-button">Soome Seiklus</Link>
+        </div>
+      </div>
     </div>
   );
 }

@@ -10,3 +10,49 @@
   padding: 0;
 }
 
+.main-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 20px;
+}
+
+.menu-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.menu-button-container:hover {
+  background-color: darkgrey;
+}
+
+.menu-button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  overflow: hidden;
+  height: fit-content;
+  padding: 2px;
+  width: 200px;
+  background-color: green;
+}
+
+.menu-button {
+  font-size: 1.2em;
+  cursor: pointer;
+  color: red;
+  padding: 10px 20px;
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+}
+
+.menu-button-image {
+  object-fit: cover;
+  width: 100%;
+}
