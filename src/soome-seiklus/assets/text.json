@@ -1,0 +1,11 @@
+{
+  "intro": {
+    "title": "Welcome to Soome Seiklus",
+    "description": "Valmistaudu seikkailuun läpi Suomen.",
+    "startButton": "start"
+  },
+  "testi": {
+    "title": "Testi",
+    "description": "Tämä on testi."
+  }
+}
